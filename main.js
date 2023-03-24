@@ -53,7 +53,8 @@ function updateTable() {
 function updateFinalMedia() {
   const averageFinal = calculateFinalAverage();
 
-  document.getElementById("final-average-value").innerHTML = averageFinal;
+  document.getElementById("final-average-value").innerHTML =
+    averageFinal.toFixed(2);
   document.getElementById("result-average-final").innerHTML =
     averageFinal >= scoreMinimum ? spanApproved : spanDisapproved;
 }
